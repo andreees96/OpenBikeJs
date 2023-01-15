@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenBikes</title>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    
+    <header id="inicio" class="header">
+        <div class="contenedor contenido-header">
+            <h1>OpenBikes</h1>
+
+            <nav class="navegacion-principal">
+                <a href="#actividades">Planes</a>
+                <a href="#galeria">Galería</a>
+                <a href="#boletos">Nosotros</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="video">
+
+        <div class="overlay">
+            <div class="contenedor contenido-video">
+                <h2>
+                    OpenBikes
+                    <span>Pedalea a tu ritmo</span>
+                </h2>
+            </div>
+        </div>
+
+        <video controls autoplay playsinline muted loop>
+            <source src="video/bike.mp4" type="video/mp4">
+            <source src="video/pool.webm" type="video/webm">
+            <source src="video/pool.m4v" type="video/m4v">          
+        </video>
+    </div>
+
+    <div class="sobre-festival contenedor">
+        <div class="imagen">
+            <img src="build/img/bicicleta.jpg" alt="imagen vocalista">
+        </div>
+        <div class="contenido-festival">
+            <h2>OpenBike</h2>
+            <p class="texto">Pedalea junto a nosotros, recorrer la ciudad a tu modo, 
+                a tu ritmo!!</p>
+        </div>
+    </div>
+
+    <section id="actividades" class="actividades">
+        <h3>Planes</h3>
+        <p> </p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario world bg-amarillo">
+                <p class="nombre-escenario">Pago Diario</p>
+                <ul class="actividad">
+                    <p>$1.200</p>
+                    <li><span>•Paga hasta 1.990 por día y haz viajes ilimitados de 60 min</span></li>
+                    <li><span>•Obten 20 min de regalo</span> </li>
+                    <a href="registro.html" class="actividad boton boton--primario">Suscribirse</a>
+                </ul>
+            </div>
+
+            <div class="escenario mapa bg-amarillo">
+                <p class="nombre-escenario">Plan Mensual Básico</p>
+                <ul class="actividad">
+                    <p>$2.990</p>
+                    <li><span>•2.990 para viajes ilimitados de 60 min al mes. </span></li>
+                    <li><span>•Pedalea hasta 1 hora sin costos adicionales. </span></li>
+                    <a href="registro.html" class="actividad boton boton--primario">Suscribirse</a>              
+                </ul>
+            </div>
+        </div>
+
+        <p> </p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario world bg-amarillo">
+                <p class="nombre-escenario">Plan Mensual Full</p>
+                <ul class="actividad">
+                    <p>$3.990</p>
+                    <li><span>•3.990 para viajes ilimitados de 120 min al mes.</span></li>
+                    <li><span>•Pedalea hasta 2 hora sin costos adicionales.</span></li>
+                    <a href="registro.html" class="boton boton--primario">Suscribirse</a>
+                </ul>
+            </div>
+
+            <div class="escenario mapa bg-amarillo">
+                <p class="nombre-escenario">Plan Anual</p>
+                <ul class="actividad">
+                    <p>$23.990</p>
+                    <li><span>•23.990 para viajes ilimitados de 60 min al año.</span></li>
+                    <li><span>•Pedalea hasta 1 hora sin costos adicionales.</span></li>
+                    <a href="registro.html" class="boton boton--primario">Suscribirse</a>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="galeria contenedor">
+        <h3>Galería</h3>
+
+        <ul class="galeria-imagenes"></ul>
+    </section>
+
+    <section id="boletos" class="boletos bg-blanco">
+        <h3>Nosotros</h3>
+        <p class="texto">OpenBike tiene como objetivo ofrecer una solución sustentable para el problema del transporte de puerta a puerta, que ayude a las personas a moverse en sus ciudades de una manera accesible y conveniente, al mismo tiempo que eliminan su huella de carbono. Estamos aquí para ayudar a las futuras generaciones a cambiar sus conductas, para que salvemos este planeta juntos.</p>
+        
+    </section>
+
+    <footer class="footer">
+        <p>OpenBike. Todos los Derechos Reservados &#174</p>
+    </footer>
+
+    <script src="build/js/bundle.js"></script>
+</body>
+</html>

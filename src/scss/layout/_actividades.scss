@@ -1,0 +1,95 @@
+.actividades{
+    background-color: $rojo;
+    padding: $separacion 0;
+
+    h3, p{
+        text-align: center;
+        color: $negro;
+        font-size: 3.5rem;
+        font-weight: $bold;
+    }
+    .dia{
+        text-transform: uppercase;
+        margin: $separacion 0;
+    }
+}
+
+.escenarios-contenedor{
+    @include tablet{
+        @include grid(2, $separacion);
+    }
+
+    .escenario{
+        padding-top: $separacion / 2;
+        border-radius: 1rem;
+    }
+
+    .nombre-escenario{
+        color: $negro;
+        font-size: 3.5rem;
+        font-weight: $bold;
+
+        &:after{
+            content: '';
+            width: 20rem;
+            height: 10rem;
+            display: block;
+            margin: 2rem auto 0 auto;
+            background-size: 10rem;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    }
+
+}
+
+.mapa .nombre-escenario{
+    &:after{
+        background-image: url(../img/bike.png);
+    }
+}
+
+.world .nombre-escenario{
+    &:after{
+        background-image: url(../img/bike.png);
+    }
+}
+
+.actividad{
+    padding: 0;
+    list-style: none;
+
+    .boton{
+        display: block; 
+        font-family: $fuentePrincipal;
+        width: 50%;
+        margin: 1rem auto;
+        text-align: center;
+        color: $blanco;
+        padding: 1rem 3rem;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        font-weight: $bold;
+        margin-bottom: 2rem;
+        border-radius: 1rem;
+    }
+    .boton:hover{
+        cursor: pointer;
+    }
+    
+    .boton--primario{
+        background-color: $negro;
+    }
+
+    li{
+        padding: $separacion2 / 2;
+        font-weight: $bold;
+        
+        text-align: center;
+        span{
+            font-weight: $regular;
+        }
+    }    
+}
+
+
